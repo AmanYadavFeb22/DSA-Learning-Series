@@ -62,7 +62,7 @@ console.log(res3)
 
 // Q4) write a function that return second largest number from an array
 
-const arr4 = [4, 9, 0, 2, 8, 17, 1]
+const arr4 = [4, 9, 0, 2, 6,5,9, 7, 1]
 
 function secondlar(arr) {
      let largest = arr[0]
@@ -72,7 +72,7 @@ function secondlar(arr) {
             seclargest = largest
             largest = arr[i]
         }
-        else if (arr[i]>seclargest) {
+        else if (arr[i]>seclargest && arr[i] !=largest) {
             seclargest=arr[i]
         }
     }
