@@ -60,7 +60,7 @@ function smallestval(){
 const res3=smallestval()
 console.log(res3)
 
-// Q4) write a function that return second largest number from an array
+// Q 4) write a function that return second largest number from an array
 
 const arr4 = [4, 9, 0, 2, 6,5,9, 7, 1]
 
