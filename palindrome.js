@@ -1,7 +1,7 @@
 // Checking a number is palindrome or not
 
 let rev =0
-function reverse(n) { 
+function isPalindrome(n) { 
    if (n < 0) {
       return false
    }
@@ -21,5 +21,5 @@ function reverse(n) {
    }
 }
 
-const isPalindrome = reverse(123321)
-console.log(isPalindrome)
+const val = isPalindrome(123321)
+console.log(val)
