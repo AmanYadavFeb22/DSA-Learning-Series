@@ -104,3 +104,38 @@ function calmul(count, n) {
 }
 let result = calmul(1, 5)
 console.log(result)
+
+
+//Q8) Reverse a array using recursion
+
+let arr = [1, 2, 3, 4, 5, 6]
+
+let newarr=[]
+function revArr(count, arr) {
+  {
+    if (count >= arr.length) {
+      return
+    }
+    revArr(count + 1, arr)
+    newarr.push(arr[count])
+  }
+  return newarr
+}
+
+let revres=revArr(0,arr)
+console.log(revres)
+
+
+// Checking a string is Palindrome or not
+
+function isPalindrome(i,name) {
+  if (i >= name.length / 2) {
+    return true
+  }
+  if (name[i] != name[name.length - 1 - i]) {
+    return false
+  }
+  return isPalindrome(i+1,name)
+}
+let result1 = isPalindrome(0,'amanmma')
+console.log(result1)
