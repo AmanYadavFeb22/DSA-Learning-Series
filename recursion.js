@@ -139,3 +139,16 @@ function isPalindrome(i,name) {
 }
 let result1 = isPalindrome(0,'amanmma')
 console.log(result1)
+
+// Multiple recursion call i.e fibonacci series
+
+function calfibonacci(n) {
+  if (n <= 1) {
+    return n
+  }
+  let last = calfibonacci(n - 1)
+  let seclast = calfibonacci(n - 2)
+  return last +seclast
+}
+let result2 = calfibonacci(6)
+console.log(result2)
