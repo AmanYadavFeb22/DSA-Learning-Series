@@ -15,3 +15,26 @@ function digit(n) {
 }
 let num = digit(4578)
 console.log(num)
+
+
+// Count maximum consecutive one
+let arr = [1,1,0,1,1,1]
+function countone(arr) {
+    let count = 0
+    let current=0
+    for (let i = 0; i < arr.length; i++){
+        if (arr[i] == 1) {
+            current++
+            
+        
+        }
+        else {
+            count = Math.max(current,count)
+            current=0
+        }
+       
+    }
+    return Math.max(current,count)
+}
+let val = countone(arr)
+console.log(val)
