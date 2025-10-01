@@ -80,3 +80,21 @@ function secondlar(arr) {
 }
 const res4 = secondlar(arr4)
 console.log(res4)
+
+// find missing number from 0 to n -leetcode problem
+
+
+let arr5=[0,5,4,1,2]
+function findmissing(arr) {
+    let n = arr.length
+    let sum = 0
+    let totalsum=n*(n+1)/2
+    for (let i = 0; i < n; i++){
+      sum=sum+arr[i]
+    }
+    if (sum != totalsum) {
+        return totalsum-sum
+    }
+}
+let res5 = findmissing(arr5)
+console.log(res5)
