@@ -32,3 +32,20 @@ function finddup(arr1) {
 let val = finddup(arr1)
 console.log(val)
 
+// remove given element from an array
+
+let arr2=[0,1,2,3,3,4,5,3,9,3,3,5]
+function remove(arr2,val){
+  let x=0;
+  for(let i=0;i<arr2.length;i++){
+      if(arr2[i] != val){
+        arr2[x]=arr2[i]
+        x=x+1
+      }
+  }
+  return x
+}
+
+let val1=remove(arr2,3)
+console.log(val1)
+
