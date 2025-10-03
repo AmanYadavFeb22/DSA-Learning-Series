@@ -152,3 +152,58 @@ function calfibonacci(n) {
 }
 let result2 = calfibonacci(6)
 console.log(result2)
+
+// calculating sum of array using recursion
+let myarr = [5, 3, 2, 0, 1]
+function tsum(arr, n) { 
+    if (n > arr.length-1) {
+        return 0
+    }
+   
+    return arr[n] + tsum(arr,n+1)
+    
+}
+console.log(tsum(myarr,0))
+
+// calculating sum of even number in array using recursion
+
+let myarr1 = [5, 1,2, 1, 0, 4,8]
+function tsum(arr, n) { 
+    if (n > arr.length-1) {
+        return 0
+    }
+    if (arr[n] % 2 === 0) {
+        return arr[n] + tsum(arr, n + 1)
+    }
+    else {
+        return tsum(arr, n + 1)
+    }
+  
+}
+console.log(tsum(myarr1,0))
+
+
+// calculate factorial of n using recursion
+
+function fact(n) {
+    if (n == 0) {
+        return 1
+    }
+
+    return n*fact(n-1)
+}
+console.log(fact(6))
+
+// is a number is a power of two or not
+function ispower(n) {
+    if (n == 1) {
+        return true
+    }
+    else if (n < 1 || n % 2 == 1) {
+        return false
+    }
+    
+    n = n / 2
+  return ispower(n)
+}
+console.log(ispower(1))
